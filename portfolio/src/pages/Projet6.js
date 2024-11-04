@@ -6,14 +6,30 @@ import DivCustom from '../components/DivCustom.js';
 import VideoPlayer from '../components/VideoPlayer.js';
 import ButtonCustom from '../components/ButtonCustom.js';
 import Footer from '../components/Footer.js';
+import Slider from '../components/Slider.js';
 
 
 
 const Projet6 = () => {
+
+  const images = [
+    "/Ludophonie/login.png",
+    "/Ludophonie/menu.png",
+    "/Ludophonie/avatar.png",
+    "/Ludophonie/mission.png",
+    "/Ludophonie/param.png",
+    "/Ludophonie/ludo-jeu.png",
+    "/Ludophonie/endGame.png",
+    "/Ludophonie/tbAdmin.png",
+    "/Ludophonie/catalogue.png",
+    "/Ludophonie/fiche.png",
+    "/Ludophonie/gestion carnet.png",
+    "/Ludophonie/ludo nouveau.png",
+    "/Ludophonie/gestionnaire.png",
+
+  ];
+
   return (
-
-
-
     <div className='page_container'>
        <div className='background_image'>
           <div className='navbar_accueil'>
@@ -32,12 +48,11 @@ const Projet6 = () => {
                   <DivCustom label={"#C#"} styleType={"tag_blanc"}/>
                   <DivCustom label={"#Winforms"} styleType={"tag_blanc"}/>
                   <DivCustom label={"#SQL"} styleType={"tag_blanc"}/>
+                  <DivCustom label={"#tests unitaires"} styleType={"tag_blanc"}/>
                 </div>
             </div>
           </div>            
         </div>
-
-       
 
         <div className='div_description'>
             <h4>Description</h4>
@@ -49,6 +64,7 @@ const Projet6 = () => {
             <h4>Technologies</h4>
             <div className='range_tech'>
               <DivCustom label={"C#"} styleType={"competences"} urlImage={"react.png"} titreAlt={"ReactTS"}/>
+              <DivCustom label={"SQL"} styleType={"competences"} urlImage={"sql.png"} titreAlt={"SQL"}/>  
             </div>
           </div>
           <div className='div_tech'>
@@ -58,22 +74,16 @@ const Projet6 = () => {
             </div>           
           </div> 
         </div>
-
         <div className='conteneur_demo_btn_fonctionnalites'>
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_demo'>
               <h4>Vidéo de présentation</h4>
               <div className='demo'>
-                <VideoPlayer 
-                  videoSrc="ludophonie.mp4" 
-                  poster="symfony.png" 
-                />
+                <Slider images={images}></Slider>
               </div>
             </div>
-
             <div className='div_buttonCustom'>
-              <ButtonCustom label="GitHub" styleType="lien_adresse" lien_page={"/Projet3"} />
-             
+              <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/Application_Ludophonie"} /> 
             </div>
           </div>
         </div>

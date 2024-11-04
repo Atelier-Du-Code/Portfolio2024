@@ -46,7 +46,7 @@ const Projet2 = () => {
             <h4>Technologies</h4>
             <div className='range_tech'>
               <DivCustom label={"ReactTS"} styleType={"competences"} urlImage={"react.png"} titreAlt={"ReactTS"}/>
-              <DivCustom label={"Next"} styleType={"competences"} urlImage={"typescript.png"} titreAlt={"ReactTS"}/>
+              <DivCustom label={"Next"} styleType={"competences"} urlImage={"next.png"} titreAlt={"ReactTS"}/>
               <DivCustom label={"Typescript"} styleType={"competences"} urlImage={"typescript.png"} titreAlt={"Next"}/>                   
               <DivCustom label={"Tailwind"} styleType={"competences"} urlImage={"tailwind.png"} titreAlt={"Tailwind"}/>                   
             </div>

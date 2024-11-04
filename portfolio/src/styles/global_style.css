@@ -17,7 +17,7 @@
   --background-gradient: radial-gradient(circle, var(--color1), var(--color2));
 
   /*Couleur de surface*/
-  --surface_color_peche: #ece3d2;
+  --surface_color_peche: #f2e6d6;
   --surface_color_peche_shadow: #a19c8784;
 
 
@@ -33,9 +33,9 @@
   --border_radius_button: 20px;
   --font_size_button: 0.85rem; 
 
-  --button_color: #eec9a4;
+  --button_color: #f7c498;
   --hover_color_button: rgb(205, 194, 181);
-  --shadow_color_button: #ad9a829d;
+  --shadow_color_button: #ac8e743d;
 
 
 
@@ -45,7 +45,7 @@
   --font_size_paragraphe_cards: 0.8rem;
 
     /* tags */   
-    --color_tags: #f0e0d3;
+    --color_tags: #f2e6d6;
 
 
   
@@ -72,10 +72,6 @@ p {
   line-height: 1.5rem;
 
 }
-
-
-
-
 
 .font_paragraphe {
   font-size: 1.0rem;

@@ -6,10 +6,22 @@ import DivCustom from '../components/DivCustom.js';
 import VideoPlayer from '../components/VideoPlayer.js';
 import ButtonCustom from '../components/ButtonCustom.js';
 import Footer from '../components/Footer.js';
+import Slider from '../components/Slider.js';
 
 
 
 const Projet4 = () => {
+
+  const images = [
+    "/mediateck86/accueil.png",
+    "/mediateck86/principal non connecte.png",
+    "/mediateck86/cours playlist.png",
+    "/mediateck86/fiche formation.png",
+    "/mediateck86/formations admin.png",
+    "/mediateck86/nouvelle formation.png",
+    "/mediateck86/admin playlist.png",
+    "/mediateck86/admin categorie.png",
+  ];
   return (
 
 
@@ -33,6 +45,7 @@ const Projet4 = () => {
                   <DivCustom label={"#Symfony"} styleType={"tag_blanc"}/>
                   <DivCustom label={"#Bootstrap"} styleType={"tag_blanc"}/>
                   <DivCustom label={"#SQL"} styleType={"tag_blanc"}/>
+                  <DivCustom label={"#tests unitaires"} styleType={"tag_blanc"}/>
                 </div>
             </div>
           </div>            
@@ -50,7 +63,10 @@ const Projet4 = () => {
             <h4>Technologies</h4>
             <div className='range_tech'>
               <DivCustom label={"PHP"} styleType={"competences"} urlImage={"php.png"} titreAlt={"php"}/>
-              <DivCustom label={"Symfony"} styleType={"competences"} urlImage={"symfony.png"} titreAlt={"Symfony"}/>                
+              <DivCustom label={"Symfony"} styleType={"competences"} urlImage={"symfony.png"} titreAlt={"Symfony"}/>  
+              <DivCustom label={"Bootstrap"} styleType={"competences"} urlImage={"bootstrap.png"} titreAlt={"Bootstrap"}/>  
+              <DivCustom label={"SQL"} styleType={"competences"} urlImage={"sql.png"} titreAlt={"SQL"}/>  
+              
             </div>
           </div>
           <div className='div_tech'>
@@ -66,17 +82,14 @@ const Projet4 = () => {
             <div className='div_demo'>
               <h4>Démonstration</h4>
               <div className='demo'>
-                <VideoPlayer 
-                  videoSrc="symfony.mov" 
-                  poster="symfony.png" 
-                />
+              <Slider images={images}></Slider>
               </div>
             </div>
 
             <div className='div_buttonCustom'>
               <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/MediatekFormation_Symfony_Definitif"} />
-              <ButtonCustom label="Site en ligne (user)" styleType="lien_adresse" lien_page={"https://avaulleemanonportefolio.fr/mediatekformation/public/pageAccueil"} />
-              <ButtonCustom label="Site en ligne (admin)" styleType="lien_adresse" lien_page={"https://avaulleemanonportefolio.fr/mediatekformation/public/login"} />
+              <ButtonCustom label="Site en ligne (user)" styleType="lien_adresse" lien_adresse={"https://avaulleemanonportefolio.fr/mediatekformation/public/pageAccueil"} />
+              <ButtonCustom label="Site en ligne (admin)" styleType="lien_adresse" lien_adresse={"https://avaulleemanonportefolio.fr/mediatekformation/public/login"} />
             </div>
           </div>
         </div>

@@ -125,28 +125,28 @@ const Accueil = () => {
               
               <CardCustom  
                   Title="GeoGuezzer" 
-                  urlImage="geoguezzer.jpg" 
+                  urlImage="geoguezzer_carte.png" 
                   tagList={['Front-end', 'API tiers', 'NextJS', 'Tailwind', 'API tiers']}
                   descriptionCourte="Mini-jeu de recherche de position sur une carte."
                   route ="2"/>
 
               <CardCustom  
                   Title="CarePlant" 
-                  urlImage="careplante-miniature.png" 
+                  urlImage="CarePlant/authentification.png" 
                   tagList={['WIP','Fullstack', 'ReactTS', 'Sass' , 'Node', 'Express', 'API', 'MongoDB']}
                   descriptionCourte="Réseau social dédié à l'échange de savoirs et de photos sur les plantes d'intérieur."
                   route ="3"/>
 
               <CardCustom  
                   Title="Mediteck86" 
-                  urlImage="portefolio.JPG" 
+                  urlImage="symfony_miniature.png" 
                   tagList={['Web', 'MVC', 'PHP', 'Symfony', 'Bootstrap', 'SQL',]}
                   descriptionCourte="Plateforme d'auto-formation en ligne de développement pour Mediteck86"
                   route ="4"/>
 
               <CardCustom  
                   Title="Ludophonie" 
-                  urlImage="portefolio.JPG" 
+                  urlImage="ludophonie_miniature.png" 
                   tagList={['Logiciel','MVC', 'C#', 'Winforms', 'SQL']}
                   descriptionCourte="Logiciel de perfectionnement de l'orthographe"
                   route ="6"/>

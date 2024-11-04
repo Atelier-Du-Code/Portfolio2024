@@ -44,6 +44,7 @@ const Projet3 = () => {
                   <DivCustom label={"#Express"} styleType={"tag_blanc"}/>
                   <DivCustom label={"#API"} styleType={"tag_blanc"}/>
                   <DivCustom label={"#MongoDB"} styleType={"tag_blanc"}/>
+                  <DivCustom label={"#tests unitaires"} styleType={"tag_blanc"}/>
                 </div>
             </div>
           </div>            
@@ -51,8 +52,7 @@ const Projet3 = () => {
 
         <div className='div_description'>
             <h4>Description</h4>
-            <p>CarePlant est une plateforme sociale dédiée aux passionnés de plantes d'intérieur. Elle permet aux utilisateurs de partager leurs connaissances, leurs astuces et des photos de leurs plantes préférées. Que vous soyez un jardinier débutant ou un expert en botanique, CarePlant vous offre un espace pour découvrir, apprendre et échanger autour de l'entretien des plantes d'intérieur.
-            Les plantes ne sont pas seulement un élément décoratif. Elles jouent également un rôle essentiel dans les espaces de vie et de travail en créant un environnement apaisant. Dans un contexte où le télétravail se généralise, CarePlant sensibilise à l'importance des plantes aussi bien à la maison que dans les bureaux pour le bien-être quotidien.</p>
+            <p>CarePlant est une plateforme sociale dédiée aux passionnés de plantes d'intérieur. <br/>Elle permet aux utilisateurs de partager leurs connaissances, leurs astuces et des photos de leurs plantes préférées.</p>
         </div>
 
         <div className='div_tech_orga'>        
@@ -61,7 +61,7 @@ const Projet3 = () => {
             <div className='range_tech'>
               <DivCustom label={"ReactTS"} styleType={"competences"} urlImage={"react.png"} titreAlt={"ReactTS"}/>              
               <DivCustom label={"CSS - Sass"} styleType={"competences"} urlImage={"css.png"} titreAlt={"Tailwind"}/>
-              <DivCustom label={"MongoDB"} styleType={"competences"} urlImage={".png"} titreAlt={"MongoDB"}/>                   
+              <DivCustom label={"MongoDB"} styleType={"competences"} urlImage={"mongodb.png"} titreAlt={"MongoDB"}/>                   
             </div>
           </div>
           <div className='div_tech'>
@@ -69,7 +69,7 @@ const Projet3 = () => {
             <div className='range_tech'>
              
               <DivCustom label={"Figma"} styleType={"competences"} urlImage={"figma.png"} titreAlt={"Figma"}/>
-              <DivCustom label={"DallE"} styleType={"competences"} urlImage={"dall.png"} titreAlt={"Dalle"}/>
+              <DivCustom label={"ChatGPT"} styleType={"competences"} urlImage={"ChatGPT.png"} titreAlt={"Dalle"}/>
                                 
             </div>           
           </div> 
