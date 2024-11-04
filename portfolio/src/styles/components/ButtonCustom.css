@@ -1,0 +1,26 @@
+.btn {
+    background-color: var(--button_color);
+    border: none;
+    border-radius: var(--border_radius_button);
+    box-shadow: 5px 5px 5px var(--shadow_color_button);
+    transition: background-color 0.3s ease-in-out;    
+    cursor: pointer;
+
+    color: var(--font_color);    
+    font-family: var(--font);  
+    font-size: var(--font_size_button);
+
+    height: 30px;
+    display: inline-block;
+    white-space: nowrap;
+
+    
+    margin-bottom: 10px;
+ 
+    padding: 0px 20px;
+}
+
+.banniere {
+    margin-right: 1vw;
+}
+

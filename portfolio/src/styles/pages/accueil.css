@@ -1,0 +1,506 @@
+.navbar_accueil {
+    display: flex;
+    justify-content: center;    
+   
+}
+
+.background-image {
+  background-image: url('../../images/image4.svg');
+  
+
+  background-size: cover; 
+  background-repeat: no-repeat; 
+
+  width: 100%; 
+  height: 300px;
+
+}
+
+
+
+.photo_profil {
+  background-image: url('../../images/moi2.jpg');
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  
+  /* Ajustement de l'image dans la div */
+  background-size: cover; /* L'image couvrira la div sans être déformée */
+ 
+  
+  /* Dimensionnement de la div */
+  width: 200px; /* Ajuste la largeur de la div en fonction de la largeur de la fenêtre */
+  height:  200px; /* Ajuste la hauteur de la div en fonction de la largeur de la fenêtre */
+  min-width: 150px; /* Largeur minimale pour éviter que la div ne devienne trop petite */
+  min-height: 150px; /* Hauteur minimale pour correspondre à la largeur minimale */
+
+  /* Style de la forme */
+  border-radius: 50%; /* Rend la div parfaitement circulaire */
+  box-shadow: 8px -5px 10px var(--shadow_color_navbar); /* Ombre autour de la div */
+}
+
+
+
+
+.container_infos_profil {
+  background-color: var(--surface_color_peche);
+ 
+  display: flex;
+  justify-content: center;
+  height: auto; 
+  width: 100%;
+  padding-bottom: 20px;
+
+  color: var(--font_color);
+
+  box-shadow: 0 -4px 5px var(--surface_color_peche_shadow), /* Ombre en haut */
+  0 4px 5px var(--surface_color_peche_shadow);  /* Ombre en bas */
+
+  
+}
+
+.child1 {
+  order: 1;
+}
+
+.child2 {
+  order: 2;
+}
+.child3 {
+  order: 3;
+}
+
+.centreur {
+ background-color: rgba(0, 0, 255, 0);
+ width: 100%; 
+ display: flex;
+ justify-content: space-between;
+ 
+}
+
+.dessend {
+  margin-top: 140px;
+}
+.encadre {
+  border: 2px solid;
+}
+
+.info_gauche {
+  background-color: rgba(165, 42, 42, 0); 
+  min-width: 300px;  
+  
+  padding-top: 10px;
+  flex: 1;
+}
+
+.info_gauche p {   
+  background-color: rgba(0, 255, 255, 0);
+  margin-bottom: -30px;
+  white-space: nowrap;
+}
+  
+.colle_a_droite {
+  background-color: rgba(127, 255, 212, 0);
+  margin-left: auto; 
+  width: 330px;  /* La largeur s'adapte au contenu */
+  height: 50%; /* La hauteur s'adapte également au contenu */
+      
+}
+
+.container_button_infos {
+  background-color: rgba(144, 0, 255, 0);
+   
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;
+  margin-left: 0vw;
+
+}
+
+.container_button_infos button:hover {
+    background-color: var(--hover_color_button);
+   
+}
+
+.texteGras {
+    font-weight: bold;
+}
+
+
+.info_milieu {
+  background-color: rgba(206, 0, 213, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;   
+    
+  width: 15vw;
+    
+  min-width: 20vw;
+}
+
+.info_milieu p {
+  background-color: rgba(127, 255, 212, 0);      
+  margin-top: 13vh;    
+  font-size: larger;
+    
+}
+.info_milieu .photo_profil {
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.info_droite {
+  background-color: rgba(97, 165, 42, 0);
+   
+  padding-top: 10px;
+  padding-bottom: 20px;  
+    
+  text-align: left;
+
+  min-width: 300px;   
+  width: 30vw;
+  
+  flex: 1;
+}
+
+.info_droite p {
+  white-space: nowrap;
+}
+   
+.texteRapproche {
+  margin-top: -15px;
+}
+
+@media (min-width: 1070px) {
+  .photo_profil {
+    background-position: -110px 0px;
+  }
+}
+  
+@media (max-width: 1070px) {
+
+  .photo_profil {    
+    width: 50px; /* Ajuste la largeur de la div */
+    height: 150px; /* Définir une hauteur pour la div, peut être modifié selon les besoins */    
+    background-position: -80px 0px;
+  }
+
+  .container_infos_profil {    
+    align-items: center;   
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .centreur {
+    background-color: rgba(0, 0, 255, 0);
+    width: 100%; 
+    display: flex;
+    flex-direction: column;  
+   }
+
+  .colle_a_droite {   
+    margin-left: auto; 
+    margin-right: auto;         
+  }
+
+  .info_gauche {
+    background-color: rgba(165, 42, 42, 0); 
+    width: 100%;
+    
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+  }
+
+  .dessend_mobile {
+    margin-top: 70px;
+  }
+
+  .info_gauche p {
+    background-color: rgba(53, 232, 220, 0);
+    margin-left: 0px;
+    text-align: center;
+    
+  }
+
+  .container_button_infos {
+    background-color: rgba(100, 12, 108, 0);
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .info_milieu {
+    background-color: rgba(206, 0, 213, 0);
+    width: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .info_droite {
+    background-color: rgba(97, 165, 42, 0);
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .info_droite p {
+    background-color: rgba(255, 228, 196, 0);
+    text-align: center;
+  }
+
+  .child1 {
+    order: 2;
+    height: 100%;
+  }
+  
+  .child2 {
+    order: 1;
+  }
+  .child3 {
+    order: 3;
+  }
+
+}
+
+
+/**********Section A propos**********************************************************/
+.texte_centre {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.block_bio {
+    padding-top: 30px;
+    margin-bottom: 13vh;
+    
+}
+
+.div_centre_exterieur {
+  background-color: rgba(127, 255, 212, 0);
+  height: auto;
+
+  display:flex;
+  justify-content: center;
+
+
+}
+.div_centre_interieur {
+  background-color: rgba(127, 172, 255, 0);
+  width: 60vw;  /* La largeur s'adapte au contenu */
+  height: auto; /* La hauteur s'adapte également au contenu */
+  
+  padding: 0 0vw;
+  white-space: normal;
+
+}
+
+.div_bas {
+  /*background-color: brown;*/
+
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  width: auto;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 650px) {
+
+  .div_bas {
+    background-color: rgba(165, 42, 42, 0);
+  
+    display: flex;
+    gap: 10px;
+    height: auto;
+    
+    justify-content: center;
+    flex-direction: column;
+  }  
+
+  .photo_profil {
+    background-position: -80px 0px;
+  }
+}
+
+
+
+
+
+/**********Section Projets**********************************************************/
+
+.block_projets {
+  background-color: var(--surface_color_peche);
+  padding: 10px 0px;
+  height: auto;
+  text-align: center;
+
+  box-shadow: 0 -4px 10px var(--surface_color_peche_shadow) /* Ombre en haut */
+  0 4px 10px var(--surface_color_peche_shadow);  /* Ombre en bas */
+
+}
+
+.block_projets h2{ 
+  margin-top: 40px;
+}
+.block_projets h3{ 
+  margin-top: 30px;
+  margin-bottom: -5px;
+}
+
+.flex-container {
+  background-color: rgba(240, 127, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 60vw;
+  border-radius: 30px;
+  height: auto;
+  padding: 28px 25px;
+}
+
+.div_centre_interieur_projet {
+  background-color: rgba(127, 172, 255, 0);
+  width: auto;  /* La largeur s'adapte au contenu */
+  height: auto; /* La hauteur s'adapte également au contenu */
+  
+  padding: 0 10vw;
+
+}
+
+.grid {
+  padding-bottom: 0vh;
+}
+
+/**********Section Compétences**********************************************************/
+.block_competences {
+    padding-top: 8vh;    
+}
+
+.block_competences h2 {
+  text-align: center;    
+}
+
+.flex-container_competence {
+  background-color: rgba(240, 127, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  gap: 20px;
+  width: 60vw;
+  border-radius: 30px;
+  height: auto;
+  padding: 28px 25px;
+}
+
+.block_competences.grid {
+  
+  padding-top: 800px;    
+}
+
+.div1_competence {
+  background-color: var(--color_tags);
+  border-radius: 30px;
+  flex: 1;
+  height: auto;  
+  width: 10vw; 
+  box-shadow: 5px 5px 5px var(--surface_color_peche_shadow);
+}
+
+.div2_competence {
+  background-color: var(--color_tags);
+  border-radius: 30px;
+  flex: 1;
+ 
+  height: 33%;
+  width: 10vw;
+  box-shadow: 5px 5px 5px var(--surface_color_peche_shadow);
+  
+
+}
+
+.div_haut_competence {
+  background-color: rgba(100, 148, 237, 0);
+}
+
+.div_haut_competence h4 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.div_bas_competence {
+  background-color: rgba(184, 11, 135, 0);
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.div_gauche_competence {
+  background-color: rgba(92, 184, 11, 0);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 5vw;
+}
+
+.div_droite_competence {
+  background-color: rgba(230, 186, 12, 0);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+  width: 5vw;
+}
+
+.competence_droite {
+  margin-right:4vw;
+
+
+}
+
+.competence_gauche {
+  margin-left: 4vw;
+}
+@media (max-width: 1200px) {
+  .flex-container_competence{
+    flex-direction: column;
+   
+  }
+
+  .div1_competence {
+    width: 60vw;
+  }
+
+  .div2_competence {
+    width: 60vw;
+  }
+
+  .competence_droite {
+    margin-right: 6vw;
+  }
+
+  .competence_left {
+    margin-left: 6vw;
+  }
+}
+
+
+
+
+/**********Section footer**********************************************************/
+.footer {
+  margin-top: 5vh;
+  height: 50px;
+  background-color: var(--surface_color_peche);
+}
+
+  

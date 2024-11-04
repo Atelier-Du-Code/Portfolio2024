@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+  /* Fonts */
+  --font: 'Lora', sans-serif;
+  --font_color: rgb(68, 56, 50);  
+
+  /* Background */
+  --color1: #fefcfb; 
+  --color2: #fcf4f2;     
+  --background-gradient: radial-gradient(circle, var(--color1), var(--color2));
+
+  /*Couleur de surface*/
+  --surface_color_peche: #ece3d2;
+  --surface_color_peche_shadow: #a19c8784;
+
+
+  /* General components */
+  --shadow_color: #f1e6e2;
+  --hover_color:  rgb(205, 194, 181);  
+
+  /* Navbar */ 
+  --shadow_color_navbar: #9d8a83;
+
+
+  /* Bouton */  
+  --border_radius_button: 20px;
+  --font_size_button: 0.85rem; 
+
+  --button_color: #eec9a4;
+  --hover_color_button: rgb(205, 194, 181);
+  --shadow_color_button: #ad9a829d;
+
+
+
+    
+  /* Card */    
+  --font_size_tags: 0.8rem;    
+  --font_size_paragraphe_cards: 0.8rem;
+
+    /* tags */   
+    --color_tags: #f0e0d3;
+
+
+  
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: var( --font);
+
+   
+  
+}
+
+h4 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+
+}
+
+
+
+
+
+.font_paragraphe {
+  font-size: 1.0rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+  

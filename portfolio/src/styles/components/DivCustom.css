@@ -1,0 +1,70 @@
+.div {
+    
+    border: 0px solid;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.div.tag {
+    background-color: var(--color_tags);
+    height: 25px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div.tag p {
+    font-size: var(--font_size_tags);
+    margin: 0 10px;
+
+}
+
+.div.tag.peche {
+    background-color: var(--color_tags);
+}
+
+.div.tag.blanc {
+    background-color: var(--color1);
+    padding: 4px 0px;
+    height: auto;
+}
+
+.divSoftSkills {
+    background-color: var(--color_tags);     
+    box-shadow: 0 4px 6px var(--shadow_color_navbar);
+    height: 40px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.div.competences {
+    background-color: rgba(165, 42, 42, 0);
+    display:flex;
+    flex-direction: column;
+    border-radius: 0px;
+
+   
+
+}
+.div.competences p {
+    margin-top: 5px;
+}
+
+.div_image_competences {
+    height: 35px;
+    width: auto;
+    max-width: 10vw;
+    border-radius: 30px;
+}
+
+.propreteImage {
+ background-color: var(--color1);
+ padding: 0px 20px;
+ padding-top: 5px;
+ 
+ border-radius: 50px;
+}
