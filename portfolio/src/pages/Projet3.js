@@ -17,7 +17,7 @@ const Projet3 = () => {
     "/CarePlant/authentification.png",
     "/CarePlant/acceuil.png",
     "/CarePlant/fiche.png",
-    "/CarePlant/herbier.png",
+    "/CarePlant/Herbier.png",
     "/CarePlant/galerie.png",
     "/CarePlant/questionnaire.png",  
   ];

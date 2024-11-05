@@ -54,7 +54,7 @@ const NavBar = () => {
 
         <div className='linkContainer_btn'>
             <div className='btnCV'>
-              <a href="/cv.pdf" download="cv.pdf">
+              <a href="/CV_Manon_Avaullée.pdf" download="CV_Manon_Avaullée.pdf">
               <ButtonCustom label="Télécharger mon CV" onClick={btnCvClick} styleType='' />
               </a>
             </div>

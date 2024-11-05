@@ -53,10 +53,12 @@ const Accueil = () => {
                 <p className=''>4ème année cursus MSC - Epitech Bordeaux</p><br/>
 
                 <div className='container_button_infos'>
-                  <a href="/cv.pdf" download="cv.pdf">
+                  <a href="/CV_Manon_Avaullée.pdf" download="CV_Manon_Avaullée.pdf">
                     <ButtonCustom label="CV" onClick={btnCvClick} styleType='banniere' />
-                  </a>                  
-                  <ButtonCustom label="LinkedIn" onClick={btnCvClick} styleType='banniere' />                  
+                  </a>
+                  
+            <ButtonCustom label="LinkedIn" styleType="lien_adresse" lien_adresse={"https://www.linkedin.com/in/manon-avaull%C3%A9e-5335a7228/"} />
+          
                 </div>
               </div>
               
