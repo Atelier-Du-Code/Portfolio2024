@@ -33,7 +33,9 @@ const NavBar = () => {
 
           <div className='estCache_520 estCache_340'>
             <div className='dropdown '>
-                <button className='dropdownButton'>Mes projets</button>
+                <button className='dropdownButton'>
+                  <p><Link to="/#projets">Mes projets</Link></p>
+                </button>
                 <div className='dropdownContent'>                 
                   <p><Link to="/projet2">GeoGuezzer</Link></p>
                   <p><Link to="/projet3">CarePlant</Link></p>
@@ -54,7 +56,7 @@ const NavBar = () => {
 
         <div className='linkContainer_btn'>
             <div className='btnCV'>
-              <a href="/CV_Manon_Avaullée.pdf" download="CV_Manon_Avaullée.pdf">
+              <a href="/CV_Manon_AVAULLEE.pdf" download="CV_Manon_Avaullée.pdf">
               <ButtonCustom label="Télécharger mon CV" onClick={btnCvClick} styleType='' />
               </a>
             </div>

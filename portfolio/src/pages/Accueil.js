@@ -53,7 +53,7 @@ const Accueil = () => {
                 <p className=''>4ème année cursus MSC - Epitech Bordeaux</p><br/>
 
                 <div className='container_button_infos'>
-                  <a href="/CV_Manon_Avaullée.pdf" download="CV_Manon_Avaullée.pdf">
+                  <a href="/CV_Manon_AVAULLEE.pdf" download="CV_Manon_Avaullée.pdf">
                     <ButtonCustom label="CV" onClick={btnCvClick} styleType='banniere' />
                   </a>
                   
@@ -83,16 +83,19 @@ const Accueil = () => {
         <div className='div_centre_exterieur'>
 
           <div className='div_centre_interieur'>
-            <p className='font_paragraphe'>
+            <p className=''>
               
-              Suite à un BTS SIO SLAM et une première année dans le cursus MSC d'Epitech Bordeaux, 
-              j'ai pus acquérir une expérience dans les languages et frameworks de développement web 
-              (HTML/CSS/JS, ReactJS/TS, NodeJs, React Natif, Symfony, PHP, Tailwind), 
-              la création et la consommation d'API, la conception et gestion de base de données relationnelle et non relationelle (SQL et MongoDB) 
-              ainsi que dans les languages de programmation objet (Java, C# et C++). <br/><br/>
+            Suite à un BTS SIO SLAM et une première année dans le cursus MSC d'Epitech Bordeaux, 
+            j'ai pu acquérir une expérience dans les langages et frameworks de développement web 
+            (HTML/CSS/JS, ReactJS/TS, NodeJs, React Native, Symfony, PHP, Tailwind), 
+            la création et la consommation d'API, la conception et la gestion de 
+            bases de données relationnelles et non relationnelles (SQL et MongoDB), 
+            ainsi que dans les langages de programmation orientée objet (Java, C# et C++).
 
-              Vous trouverez dans ce portefolio des projets scolaires et personnels, en cours ou finalisés qui illustrent mes connaissances.
+            <br/>
+            <br/>
 
+            Vous trouverez dans ce portfolio des projets scolaires et personnels, en cours ou finalisés, qui illustrent mes connaissances.
             </p>
 
           </div>
@@ -119,7 +122,8 @@ const Accueil = () => {
         <h2>Mes projets</h2>
 
         <div className='grid'>
-          <h3>Développement informatique</h3>
+          {/* <h3>Développement informatique</h3> */}
+         
           <div className='div_centre_exterieur'>
 
             <div className='div_centre_interieur_projet'>
@@ -140,10 +144,10 @@ const Accueil = () => {
                   route ="3"/>
 
               <CardCustom  
-                  Title="Mediteck86" 
+                  Title="Mediateck86" 
                   urlImage="symfony_miniature.png" 
                   tagList={['Web', 'MVC', 'PHP', 'Symfony', 'Bootstrap', 'SQL',]}
-                  descriptionCourte="Plateforme d'auto-formation en ligne de développement pour Mediteck86"
+                  descriptionCourte="Plateforme d'auto-formation en ligne de développement pour Mediateck86"
                   route ="4"/>
 
               <CardCustom  

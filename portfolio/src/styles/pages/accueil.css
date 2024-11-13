@@ -34,7 +34,7 @@
 
   /* Style de la forme */
   border-radius: 50%; /* Rend la div parfaitement circulaire */
-  box-shadow: 8px -5px 10px var(--shadow_color_navbar); /* Ombre autour de la div */
+  box-shadow: 4px -2px 10px var(--surface_color_peche_shadow); /* Ombre autour de la div */
 }
 
 
@@ -47,7 +47,7 @@
   justify-content: center;
   height: auto; 
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 
   color: var(--font_color);
 
@@ -263,7 +263,7 @@
 }
 
 
-/**********Section A propos**********************************************************/
+/********** Section A propos **********************************************************/
 .texte_centre {
   text-align: center;
   margin-top: 40px;
@@ -271,8 +271,8 @@
 }
 
 .block_bio {
-    padding-top: 30px;
-    margin-bottom: 13vh;
+    padding-top: 10px;
+    margin-bottom: 5vh;
     
 }
 
@@ -287,7 +287,7 @@
 }
 .div_centre_interieur {
   background-color: rgba(127, 172, 255, 0);
-  width: 60vw;  /* La largeur s'adapte au contenu */
+  width: 50vw;  /* La largeur s'adapte au contenu */
   height: auto; /* La hauteur s'adapte également au contenu */
   
   padding: 0 0vw;
@@ -325,20 +325,17 @@
   }
 }
 
-
-
-
-
 /**********Section Projets**********************************************************/
 
 .block_projets {
   background-color: var(--surface_color_peche);
-  padding: 10px 0px;
+  padding: 1vh 0vh;
+  
   height: auto;
   text-align: center;
 
-  box-shadow: 0 -4px 10px var(--surface_color_peche_shadow) /* Ombre en haut */
-  0 4px 10px var(--surface_color_peche_shadow);  /* Ombre en bas */
+  box-shadow: 0 -4px 10px var(--surface_color_peche_shadow)
+  0 4px 10px var(--surface_color_peche_shadow);  
 
 }
 
@@ -356,11 +353,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  width: 60vw;
+  gap: 15px;
+  width: 62vw;
   border-radius: 30px;
   height: auto;
-  padding: 28px 25px;
+  padding: 15px 0px;
 }
 
 .div_centre_interieur_projet {
@@ -373,12 +370,21 @@
 }
 
 .grid {
-  padding-bottom: 0vh;
+  padding-bottom: 4vh;
+}
+
+@media (max-width: 1050px){
+
+  .flex-container {
+
+    width: 90vw;
+  }
 }
 
 /**********Section Compétences**********************************************************/
 .block_competences {
-    padding-top: 8vh;    
+    padding-top: 4vh;  
+    margin-bottom: -5vh;
 }
 
 .block_competences h2 {

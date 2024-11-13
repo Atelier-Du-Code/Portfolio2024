@@ -23,7 +23,7 @@
 
   /* General components */
   --shadow_color: #f1e6e2;
-  --hover_color:  rgb(205, 194, 181);  
+  --hover_color:  #f7c498;  
 
   /* Navbar */ 
   --shadow_color_navbar: #9d8a83;
@@ -34,7 +34,7 @@
   --font_size_button: 0.85rem; 
 
   --button_color: #f7c498;
-  --hover_color_button: rgb(205, 194, 181);
+  --hover_color_button: #e6a56d;
   --shadow_color_button: #ac8e743d;
 
 
@@ -69,14 +69,11 @@ h4 {
 
 p {
   font-size: 0.9rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 
 }
 
-.font_paragraphe {
-  font-size: 1.0rem;
-  line-height: 1.6;
-}
+
 
 
 

@@ -36,7 +36,7 @@
 .divSoftSkills {
     background-color: var(--color_tags);     
     box-shadow: 0 4px 6px var(--shadow_color_navbar);
-    height: 40px;
+    height: 30px;
     padding: 0 30px;
     text-align: center;
 }

@@ -20,6 +20,10 @@
     padding: 0px 20px;
 }
 
+.btn:hover {
+    background-color: var(--hover_color_button);
+}
+
 .banniere {
     margin-right: 1vw;
 }

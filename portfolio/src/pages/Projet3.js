@@ -52,7 +52,7 @@ const Projet3 = () => {
 
         <div className='div_description'>
             <h4>Description</h4>
-            <p>CarePlant est une plateforme sociale dédiée aux passionnés de plantes d'intérieur. <br/>Elle permet aux utilisateurs de partager leurs connaissances, leurs astuces et des photos de leurs plantes préférées.</p>
+            <p>CarePlant est une plateforme sociale dédiée aux passionnés de plantes d'intérieur. Elle permet aux utilisateurs de partager leurs connaissances, leurs astuces et des photos de leurs plantes préférées.</p>
         </div>
 
         <div className='div_tech_orga'>        
