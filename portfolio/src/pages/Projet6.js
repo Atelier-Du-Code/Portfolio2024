@@ -77,7 +77,7 @@ const Projet6 = () => {
         <div className='conteneur_demo_btn_fonctionnalites'>
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_demo'>
-              <h4>Vidéo de présentation</h4>
+              <h4>Quelques visuels</h4>
               <div className='demo'>
                 <Slider images={images}></Slider>
               </div>

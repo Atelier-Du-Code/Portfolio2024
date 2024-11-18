@@ -8,18 +8,16 @@ import Footer from '../components/Footer.js';
 import DivImage from '../components/DivImage.js';
 import Slider from '../components/Slider.js';
 
-
-
-
 const Projet3 = () => {
 
   const images = [
-    "/CarePlant/authentification.png",
-    "/CarePlant/acceuil.png",
-    "/CarePlant/fiche.png",
+    "/CarePlant/Accueil.png",
+    "/CarePlant/publication.png",
+    "/CarePlant/Fiche_plante.png",
     "/CarePlant/Herbier.png",
-    "/CarePlant/galerie.png",
-    "/CarePlant/questionnaire.png",  
+    "/CarePlant/Questionnaire_accueil.png",  
+    "/CarePlant/Questionnaire_p1.png",  
+    "/CarePlant/Questionnaire_p2.png",  
   ];
 
   return (
@@ -79,8 +77,7 @@ const Projet3 = () => {
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_demo'>
               <h4>Quelques visuels</h4>
-              <Slider images={images}></Slider>
-            
+              <Slider images={images}></Slider>            
             </div>
 
             <div className='div_buttonCustom'>
@@ -93,32 +90,34 @@ const Projet3 = () => {
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_fonctionnalites'>
               <div className='fonctionalites'>
-                <h4> Fonctionnalité développées </h4>
-                <p> - Côté back-end : CURD des plantes et de ses attributs avec leurs tests unitaires </p>
-                <p> - Côté front : Expérimentation d'une scene en Three.js en vue de l'implémentation de modèles 3D pour chacune des plantes répertoriées.</p>
+                <h4> Sprint(s) effectués et en cours </h4>
+                <p> - Préparation du projet : Mise en place de la charte graphique, choix des technologies, mise en place du déploiement continu, mise en place des issues GitHub</p>
+                <p> - Sprint 1 : Développement de l'herbier et des fiches de plantes (image 3)/ Affichage des plantes et de leurs informations</p>
               </div>
             </div>
 
             <div className='div_fonctionnalites'>
               <div className='fonctionalites'>
-                <h4> Fonctionnalités à venir </h4>
-                <p> - CRUD des utilisateurs ainsi que l'authentification </p>
-                <p> - CRUD des plantes adoptées par un utilisateur </p>
-                <p> - Système de like et dislike de mise en valeur des photos partagées par les utilisateurs </p>
-                <p> - Ajout des commentaires sous les photos partagées </p>
-                <p> - Ajout de la modération des commentaires </p>
-                <p> - Développement de l'application mobile permettant le suivis des plantes de la liste des plantes possédées avec l'envoi de notification de rappel pour le suivis de l'arrosage des plantes suivant leur besoin. </p>
-                <p> - Développement d'un chatbot capable de répondre aux questions des utilisateurs sur l'entretien des plantes, en se basant sur les données de la bibliothèque.</p>
-              </div>
-                
-            </div>
-
-           
-          </div>
-        
+                <h4> Sprints à venir </h4>
+                <p> - Sprint 2 : Développement de l'authentification et du profil utilisateur. </p>
+                <p> - Sprint 3 : Développement de la liste de plantes adoptées. </p>
+                <p> - Sprint 4 : Développement de la page d'accueil. </p>
+                <p> - Sprint 5 : Développement du questionnaire de recommandation / Filtrage multi-critères des plantes.</p>
+                <p> - Sprint 6 : Développement de la liste de favoris. </p>
+                <p> - Sprint 7 : Développement du fil d'actualité.</p>
+                <p> - Sprint 8 : Développement du systeme de publication ainsi que le système de like et dislike. </p>
+                <p> - Sprint 9 : Développement de l'ajout de commentaires pour chaqu'une des publications. </p>
+                <p> - Sprint 10 : Création de la modération des commentaires.</p>
+                <p> - Sprint 11 : Développement de la recommandation d'évènements, d'enseigne ou de matériels, sponsorisé ou non. </p>
+                <p> - Sprint 12 : Développement des kits du débutant et du planteur de pépins. </p>
+                <p> - Sprint 13 : Développement d'un chatbox capable de répondre aux questions des utilisateurs sur l'entretien des plantes. </p>
+                <p> - Sprint 14 : Développement d'un système de recomandation des publications à faire remonter en priorité dans le fil d'actualité. </p>
+                <p> - Application Mobile : Développement de l'interface mobile permettant l'envoie de notifications pour l'arrosage des plantes adoptées suivant leurs besoins. </p>
+              </div>                
+            </div>           
+          </div>        
         </div>
         <Footer></Footer>
-
     </div>
   );
 };

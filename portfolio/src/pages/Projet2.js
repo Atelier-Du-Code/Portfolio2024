@@ -64,7 +64,7 @@ const Projet2 = () => {
         <div className='conteneur_demo_btn_fonctionnalites'>
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_demo'>
-              <h4>Démonstration</h4>
+              <h4>Vidéo de démonstration</h4>
               <div className='demo'>
                 <VideoPlayer 
                   videoSrc="geoguezzer.webm" 
