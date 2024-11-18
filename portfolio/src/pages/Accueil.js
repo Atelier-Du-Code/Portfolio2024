@@ -138,7 +138,7 @@ const Accueil = () => {
 
               <CardCustom  
                   Title="CarePlant" 
-                  urlImage="CarePlant/authentification.png" 
+                  urlImage="CarePlant/careplante-miniature.png" 
                   tagList={['WIP','Fullstack', 'ReactTS', 'Sass' , 'Node', 'Express', 'API', 'MongoDB']}
                   descriptionCourte="Réseau social dédié à l'échange de savoirs et de photos sur les plantes d'intérieur."
                   route ="3"/>
