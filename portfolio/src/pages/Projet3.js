@@ -5,7 +5,6 @@ import NavBar from '../components/NavBar.js';
 import DivCustom from '../components/DivCustom.js';
 import ButtonCustom from '../components/ButtonCustom.js';
 import Footer from '../components/Footer.js';
-import DivImage from '../components/DivImage.js';
 import Slider from '../components/Slider.js';
 
 const Projet3 = () => {
@@ -81,7 +80,7 @@ const Projet3 = () => {
             </div>
 
             <div className='div_buttonCustom'>
-              <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/CarePlante/tree/main"} />
+              <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/CarePlants_TS"} />
             </div>
           </div>
         </div>
@@ -92,7 +91,7 @@ const Projet3 = () => {
               <div className='fonctionalites'>
                 <h4> Sprint(s) effectués et en cours </h4>
                 <p> - Préparation du projet : Mise en place de la charte graphique, choix des technologies, mise en place du déploiement continu, mise en place des issues GitHub</p>
-                <p> - Sprint 1 : Développement de l'herbier et des fiches de plantes (image 3)/ Affichage des plantes et de leurs informations</p>
+                <p> - Sprint 1 : Développement de l'herbier et des fiches de plantes (image 3 et 4)/ Affichage des plantes et de leurs informations</p>
               </div>
             </div>
 
@@ -108,10 +107,11 @@ const Projet3 = () => {
                 <p> - Sprint 8 : Développement du systeme de publication ainsi que le système de like et dislike. </p>
                 <p> - Sprint 9 : Développement de l'ajout de commentaires pour chaqu'une des publications. </p>
                 <p> - Sprint 10 : Création de la modération des commentaires.</p>
-                <p> - Sprint 11 : Développement de la recommandation d'évènements, d'enseigne ou de matériels, sponsorisé ou non. </p>
-                <p> - Sprint 12 : Développement des kits du débutant et du planteur de pépins. </p>
-                <p> - Sprint 13 : Développement d'un chatbox capable de répondre aux questions des utilisateurs sur l'entretien des plantes. </p>
-                <p> - Sprint 14 : Développement d'un système de recomandation des publications à faire remonter en priorité dans le fil d'actualité. </p>
+                <p> - Sprint 11 : Développpement du système de suivi d'autres utilisateurs </p>
+                <p> - Sprint 12 : Développement de la recommandation d'évènements, d'enseigne ou de matériels, sponsorisé ou non. </p>
+                <p> - Sprint 13 : Développement des kits du débutant et du planteur de pépins. </p>
+                <p> - Sprint 14 : Développement d'un chatbox capable de répondre aux questions des utilisateurs sur l'entretien des plantes. </p>
+                <p> - Sprint 15 : Développement d'un système de recomandation des publications à faire remonter en priorité dans le fil d'actualité. </p>
                 <p> - Application Mobile : Développement de l'interface mobile permettant l'envoie de notifications pour l'arrosage des plantes adoptées suivant leurs besoins. </p>
               </div>                
             </div>           

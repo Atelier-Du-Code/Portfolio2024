@@ -40,7 +40,10 @@ const NavBar = () => {
                   <p><Link to="/projet2">GeoGuezzer</Link></p>
                   <p><Link to="/projet3">CarePlant</Link></p>
                   <p><Link to="/projet4">Mediatech86</Link></p>                 
-                  <p><Link to="/projet6">Ludophonie</Link></p>                
+                  <p><Link to="/projet6">Ludophonie</Link></p>  
+                  <p><Link to="/projet7">De l'Essence à la Saveur</Link></p>  
+                  <p><Link to="/projet8">Animation 3D loader</Link></p>    
+                  <p><Link to="/projet9">Asset 3D pour le jeu vidéo</Link></p>            
                   
                 </div>
               </div>

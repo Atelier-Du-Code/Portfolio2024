@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import '../styles/components/ButtonCustom.css'; // Fichier CSS pour le style du bouton
+import '../styles/components/ButtonCustom.css'; 
 
 const ButtonCustom = ({ label, route, styleType, disabled = false, lien_page, lien_adresse}) => {
 
@@ -41,6 +41,14 @@ const ButtonCustom = ({ label, route, styleType, disabled = false, lien_page, li
         navigate('/projet7');
         break;
 
+      case '8':
+        navigate('/projet8');
+        break;
+
+      case '9':
+        navigate('/projet9');
+        break;
+  
       default:
         navigate('/');
         break;

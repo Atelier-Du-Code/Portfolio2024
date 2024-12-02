@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import '../styles/global_style.css';
 import '../styles/pages/accueil.css';
@@ -122,7 +122,7 @@ const Accueil = () => {
         <h2>Mes projets</h2>
 
         <div className='grid'>
-          {/* <h3>Développement informatique</h3> */}
+          <h3>Développement informatique</h3>
          
           <div className='div_centre_exterieur'>
 
@@ -156,6 +156,42 @@ const Accueil = () => {
                   tagList={['Logiciel','MVC', 'C#', 'Winforms', 'SQL']}
                   descriptionCourte="Logiciel de perfectionnement de l'orthographe"
                   route ="6"/>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='grid'>
+          <h3>Art du pixel</h3>
+         
+          <div className='div_centre_exterieur'>
+
+            <div className='div_centre_interieur_projet'>
+              <div class="flex-container">
+              
+              <CardCustom  
+                  Title="De l'essence à la saveur" 
+                  urlImage="art/des3.png" 
+                  tagList={['Illustrator', 'Photoshop']}
+                  descriptionCourte="Création de charte graphique pour l'entreprise  ''De l'Essence à la Saveur''"
+                  route ="7"/>
+
+              <CardCustom  
+                  Title="Animation 3D loader" 
+                  urlImage="art/engrenage.png" 
+                  tagList={['Blender','Illustrator']}
+                  descriptionCourte="Création d’une animation 3D pour le loader d’un site ou d’une application web."
+                  route ="8"/>
+
+              <CardCustom  
+                  Title="Asset 3D pour le jeux vidéo" 
+                  urlImage="/art/distributeur/1.png" 
+                  tagList={['Blender']}
+                  descriptionCourte="Modélisation d'assets 3D pour le jeu vidéo"
+                  route ="9"/>
+
+              
 
               </div>
             </div>
@@ -249,3 +285,6 @@ const Accueil = () => {
 };
 
 export default Accueil;
+
+
+
