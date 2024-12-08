@@ -39,6 +39,8 @@
 .div_bande_banniere_texte p {
   margin-top: -15px;
   background-color: rgba(178, 255, 127, 0);
+  
+ 
 }
 
 .div_organise_tags {
@@ -72,6 +74,8 @@
     flex-direction: column;  
     justify-content: center;
     gap: 0px;
+
+    text-align: center;
 }
 
 .div_description p {

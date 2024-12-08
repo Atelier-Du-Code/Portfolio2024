@@ -50,7 +50,7 @@ const Accueil = () => {
               <div className='colle_a_droite'>
                 <p className='texteGras'>Manon Avaullée</p><br/>
                 <p className='texteGras'>Architecte logiciel et application web</p><br/>
-                <p className=''>4ème année cursus MSC - Epitech Bordeaux</p><br/>
+                <p className=''>Epitech Bordeaux - 4ème année cursus MSC</p><br/>
 
                 <div className='container_button_infos'>
                   <a href="/CV_Manon_AVAULLEE.pdf" download="CV_Manon_Avaullée.pdf">
@@ -95,7 +95,7 @@ const Accueil = () => {
             <br/>
             <br/>
 
-            Vous trouverez dans ce portfolio des projets scolaires et personnels, en cours ou finalisés, qui illustrent mes connaissances.
+            Vous trouverez dans ce portfolio quelques réalisations, projets scolaires ou personnels, en cours ou finalisés.
             </p>
 
           </div>

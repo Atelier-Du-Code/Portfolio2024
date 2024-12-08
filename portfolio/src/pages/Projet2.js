@@ -86,9 +86,9 @@ const Projet2 = () => {
             <div className='div_fonctionnalites'>
               <div className='fonctionalites'>
                 <h4> Fonctionnalités développées </h4>
-                <p> - Consommation de l'API leaflet pour l'intégration d'une carte interactive ainsi que du feedback de performance</p>
-                <p> - Consommation de l'API de OpenStreetMap pour la récupération des données géographiques (images répertoriées avec leurs coordonnées GPS) </p>
-                <p> - Calcul et affichage de la précision de la réponse du joueur en fonction de la distance entre sa réponse et la position réelle</p>
+                <p> - Consommation de l'API leaflet pour l'intégration d'une carte interactive ainsi que du feedback de performance.</p>
+                <p> - Consommation de l'API de OpenStreetMap pour la récupération des données géographiques (images répertoriées avec leurs coordonnées GPS). </p>
+                <p> - Calcul et affichage de la précision de la réponse du joueur ( distance entre la localisation proposée par le joueur et la localisation réelle ).</p>
               
               </div>
             </div>

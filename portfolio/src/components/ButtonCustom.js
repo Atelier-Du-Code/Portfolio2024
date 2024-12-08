@@ -1,110 +1,99 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../styles/components/ButtonCustom.css';
 
-import '../styles/components/ButtonCustom.css'; 
-
-const ButtonCustom = ({ label, route, styleType, disabled = false, lien_page, lien_adresse}) => {
-
+const ButtonCustom = ({ label, route, styleType, disabled = false, lien_page, lien_adresse }) => {
   const navigate = useNavigate();
 
   const btnClickProjet = () => {
+    console.log("Clic pour changer de page");
 
-    console.log("clic pour changer de page");
-
+    // Définir l'URL en fonction de la route
+    let targetRoute = '/';
     switch (route) {
-
       case '1':
-        navigate('/projet1');
+        targetRoute = '/projet1';
         break;
-
       case '2':
-        navigate('/projet2');
+        targetRoute = '/projet2';
         break;
-
       case '3':
-        navigate('/projet3');
+        targetRoute = '/projet3';
         break;
-      
       case '4':
-        navigate('/projet4');
+        targetRoute = '/projet4';
         break;
-      
       case '5':
-        navigate('/projet5');
+        targetRoute = '/projet5';
         break;
-      
       case '6':
-        navigate('/projet6');
+        targetRoute = '/projet6';
         break;
-      
       case '7':
-        navigate('/projet7');
+        targetRoute = '/projet7';
         break;
-
       case '8':
-        navigate('/projet8');
+        targetRoute = '/projet8';
         break;
-
       case '9':
-        navigate('/projet9');
+        targetRoute = '/projet9';
         break;
-  
       default:
-        navigate('/');
         break;
     }
 
-  }
+    // Si le styleType est différent de lien_page et lien_adresse, ouvrir dans un nouvel onglet
+    if (styleType !== 'lien_page' && styleType !== 'lien_adresse') {
+      window.open(targetRoute, '_blank'); // Ouvre dans un nouvel onglet
+    } else {
+      navigate(targetRoute); // Navigation classique dans le même onglet
+    }
+  };
 
   const btnClickLien_page = () => {
     navigate(lien_page);
-  }
+  };
 
   const btnClickLien_adresse = () => {
     window.open(lien_adresse, '_blank');
-  }
+  };
 
   return (
     <>
-      {styleType === "banniere" ? (
-
-          <button 
-          className='btn banniere'
-          onClick={btnClickProjet} 
-          disabled={disabled}
-          >
-          {label}
-          </button>        
-      ) : styleType === "lien_page" ? (
+      {styleType === 'banniere' ? (
         <button
-          className='btn'
+          className="btn banniere"
+          onClick={btnClickProjet}
+          disabled={disabled}
+        >
+          {label}
+        </button>
+      ) : styleType === 'lien_page' ? (
+        <button
+          className="btn"
           onClick={btnClickLien_page}
           disabled={disabled}
         >
           {label}
         </button>
-      ) : styleType === "lien_adresse" ? (
+      ) : styleType === 'lien_adresse' ? (
         <button
-          className='btn'
+          className="btn"
           onClick={btnClickLien_adresse}
           disabled={disabled}
         >
           {label}
         </button>
       ) : (
-        <button 
-          className='btn'
-          onClick={btnClickProjet} 
+        <button
+          className="btn"
+          onClick={btnClickProjet}
           disabled={disabled}
-          >
+        >
           {label}
         </button>
       )}
-    
     </>
-
-
-    
   );
 };
 

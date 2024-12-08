@@ -32,8 +32,8 @@ const Projet7 = () => {
 
         <div className='div_bande_banniere'>
           <div className='div_bande_banniere_texte'>
-            <h2>De l'essence à la saveur</h2>
-            <p>Création de charte graphique pour l'entreprise ''De l'Essence à la Saveur (D.E.S)</p>
+            <h2>De l'Essence à la Saveur</h2>
+            <p>Création de charte graphique pour l'entreprise ''De l'Essence à la Saveur (D.E.S)''</p>
               <div className='div_organise_tags'>            
                 <div className='div_tags'>
                   <DivCustom label={"#Illustrator"} styleType={"tag_blanc"}/>
@@ -45,7 +45,7 @@ const Projet7 = () => {
 
         <div className='div_description'>
             <h4>Description</h4>
-            <p>Conception de l'identité graphique de l'entreprise "De l'Essence à la Saveur", incluant la création de son logo et de l'étiquette pour son produit phare : un paquet d'épices à paella</p>
+            <p>Conception de l'identité graphique de l'entreprise "De l'Essence à la Saveur", incluant la création de son logo et de l'étiquette pour son produit phare : un paquet d'épices à paëlla</p>
         </div>
 
         <div className='div_tech_orga'>        
@@ -61,7 +61,7 @@ const Projet7 = () => {
         <div className='conteneur_demo_btn_fonctionnalites'>
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_demo'>
-              <h4>Identité graphique et étiquette produit</h4>
+              <h4>Conception de l'identité graphique et de l'étiquette du produit</h4>
               <div className='demo'>
               <Slider images={images}></Slider> 
                 

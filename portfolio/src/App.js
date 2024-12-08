@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTop from "../src/components/ScrollToTop.js";
 
 //Pages
 import Accueil from './pages/Accueil.js';
@@ -13,7 +14,8 @@ import Projet9 from './pages/Projet9.js';
 
 const App = () => {
   return (
-    <Router>      
+    <Router>    
+       <ScrollToTop />  
       <Routes>
         <Route path="/" element={<Accueil />} />
        

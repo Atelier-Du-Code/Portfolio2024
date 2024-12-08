@@ -80,7 +80,7 @@ const Projet3 = () => {
             </div>
 
             <div className='div_buttonCustom'>
-              <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/CarePlants_TS"} />
+              <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/CarePlant"} />
             </div>
           </div>
         </div>
@@ -89,30 +89,30 @@ const Projet3 = () => {
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_fonctionnalites'>
               <div className='fonctionalites'>
-                <h4> Sprint(s) effectués et en cours </h4>
-                <p> - Préparation du projet : Mise en place de la charte graphique, choix des technologies, mise en place du déploiement continu, mise en place des issues GitHub</p>
-                <p> - Sprint 1 : Développement de l'herbier et des fiches de plantes (image 3 et 4)/ Affichage des plantes et de leurs informations</p>
+                <h4> Sprint effectués et en cours </h4>
+                <p> - Préparation du projet : Mise en place de la charte graphique, choix des technologies, mise en place du déploiement continu, mise en place des tâches (issues).</p>
+                <p> - Sprint 1 : Développement de l'herbier virtuel, base de données décrivant les caractéristiques botaniques et le biotope optimal des plantes d'intérieur ou de jardin.</p>
               </div>
             </div>
 
             <div className='div_fonctionnalites'>
               <div className='fonctionalites'>
-                <h4> Sprints à venir </h4>
-                <p> - Sprint 2 : Développement de l'authentification et du profil utilisateur. </p>
-                <p> - Sprint 3 : Développement de la liste de plantes adoptées. </p>
-                <p> - Sprint 4 : Développement de la page d'accueil. </p>
-                <p> - Sprint 5 : Développement du questionnaire de recommandation / Filtrage multi-critères des plantes.</p>
-                <p> - Sprint 6 : Développement de la liste de favoris. </p>
-                <p> - Sprint 7 : Développement du fil d'actualité.</p>
-                <p> - Sprint 8 : Développement du systeme de publication ainsi que le système de like et dislike. </p>
-                <p> - Sprint 9 : Développement de l'ajout de commentaires pour chaqu'une des publications. </p>
-                <p> - Sprint 10 : Création de la modération des commentaires.</p>
-                <p> - Sprint 11 : Développpement du système de suivi d'autres utilisateurs </p>
-                <p> - Sprint 12 : Développement de la recommandation d'évènements, d'enseigne ou de matériels, sponsorisé ou non. </p>
-                <p> - Sprint 13 : Développement des kits du débutant et du planteur de pépins. </p>
-                <p> - Sprint 14 : Développement d'un chatbox capable de répondre aux questions des utilisateurs sur l'entretien des plantes. </p>
-                <p> - Sprint 15 : Développement d'un système de recomandation des publications à faire remonter en priorité dans le fil d'actualité. </p>
-                <p> - Application Mobile : Développement de l'interface mobile permettant l'envoie de notifications pour l'arrosage des plantes adoptées suivant leurs besoins. </p>
+                <h4> Les sprints à venir </h4>
+                <p> - Sprint 2 : Authentification et création du profil utilisateur. </p>
+                <p> - Sprint 3 : Gestion des plantes de l'utilisateur. </p>
+                <p> - Sprint 4 : Page d'accueil. </p>
+                <p> - Sprint 5 : Questionnaire sur l'environnement futur de la plante / Filtrage multi-critères.</p>
+                <p> - Sprint 6 : Gestion des favoris (plantes).</p>
+                <p> - Sprint 7 : Système de publication et de "like/dislike". </p>
+                <p> - Sprint 8 : Fil d'actualité.</p>
+                <p> - Sprint 9 : Ajout de commentaires pour chacune des publications. </p>
+                <p> - Sprint 10 : Système de modération automatique des commentaires.</p>
+                <p> - Sprint 11 : Système de suivi d'autres utilisateurs </p>
+                <p> - Sprint 12 : Recommandation d'évènements, d'enseigne ou de matériels, sponsorisés ou pas. </p>
+                <p> - Sprint 13 : Kits du débutant et du planteur de pépins. </p>
+                <p> - Sprint 14 : Chatbot qui répond aux questions des utilisateurs sur l'entretien des plantes. </p>
+                <p> - Sprint 15 : Système de recommandation des publications du fil d'actualité. </p>
+                <p> - Sprint 16 : Application mobile qui envoie des notifications pour l'arrosage des plantes de l'utilisateur.</p>
               </div>                
             </div>           
           </div>        

@@ -99,10 +99,10 @@ const Projet4 = () => {
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_fonctionnalites'>
               <div className='fonctionalites'>
-                <h4> Fonctionnalités développées </h4>
+                <h4> Travaux de développement </h4>
                 <p> - Côté back-end : CRUD des différentes entités et authentification</p>
-                <p> - Coté front : Ajout des différents tris et flitre des formations sur les critères de leur nom ainsi que ceux des playlists sur leur critère de leur nombre de fomations </p>
-                <p> - Gestion des tests unitaires et d'intégration</p>              
+                <p> - Coté front : Ajout des différents tris et filtre sur les formations et sur les playlists</p>
+                <p> - Création des tests unitaires et d'intégration</p>              
               </div>
             </div>
 
