@@ -5,11 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 :root {
 
   /* Fonts */
-  --font: 'Lora', sans-serif;
-  --font_color: rgb(68, 56, 50);  
+  --font: 'ubuntu', sans-serif;
+  --font_color_foncee: #514226;  
+  --font_color_clair: #fcf7ed;
+
+
 
   /* Background */
   --color1: #fefcfb; 
@@ -17,38 +22,35 @@
   --background-gradient: radial-gradient(circle, var(--color1), var(--color2));
 
   /*Couleur de surface*/
-  --surface_color_peche: #f2e6d6;
-  --surface_color_peche_shadow: #a19c8784;
-
+  --surface_color_peche: #f1e2c6;
+  --surface_color_peche_shadow: #46433f62;
+  --surface_claire: #9c8f7a73;
+  --div_background: #f1e2c6af;
 
   /* General components */
-  --shadow_color: #f1e6e2;
-  --hover_color:  #f7c498;  
-
+  --shadow_color: #d60909;
+  --color_card: #fffaf0e7;
+ 
   /* Navbar */ 
-  --shadow_color_navbar: #9d8a83;
-
+  --hover_color_navbar_clair: #f1e2c654; 
+  --hover_color_navbar_foncee: #5c4a74b9; 
 
   /* Bouton */  
   --border_radius_button: 20px;
   --font_size_button: 0.85rem; 
 
-  --button_color: #f7c498;
-  --hover_color_button: #e6a56d;
-  --shadow_color_button: #ac8e743d;
-
-
-
-    
+  --button_color: #f1e2c6ce;
+  --hover_color_button: #d3ba8c;
+  --shadow_color_button: #4d4d4d62;
+  
   /* Card */    
   --font_size_tags: 0.8rem;    
   --font_size_paragraphe_cards: 0.8rem;
 
     /* tags */   
-    --color_tags: #f2e6d6;
+    --color_tags: #8d71395e;
+    --color_tags_clair: #cfbfa35d;
 
-
-  
 }
 
 html {
@@ -57,18 +59,31 @@ html {
 
 body {
     font-family: var( --font);
+    color: var(--font_color)
+}
 
-   
-  
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 1.4rem;
-  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 200;
+
 }
 
 p {
   font-size: 0.9rem;
+  font-weight: 400;
   line-height: 1.6rem;
 
 }

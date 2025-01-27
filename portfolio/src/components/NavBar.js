@@ -17,7 +17,7 @@ const NavBar = () => {
     <div className='navbar'>      
 
         <div className='linkContainer_other estCache_830 estCache_720 estCache_520 estCache_340'>
-          <p>PORTEFOLIO</p>
+          <h3>PORTEFOLIO</h3>
         </div>
 
         <div className='linkContainer_link'>
@@ -49,11 +49,8 @@ const NavBar = () => {
               </div>
           </div>
 
-          <div className='estCache_720 estCache_520 estCache_340'>
-            
-          <p><Link to="/#competences">Compétences</Link></p>
-        
-
+          <div className='estCache_720 estCache_520 estCache_340'>            
+            <p><Link to="/#competences">Compétences</Link></p>
           </div>
         </div>
 
@@ -64,11 +61,6 @@ const NavBar = () => {
               </a>
             </div>
         </div>
-
-      
-     
-
-      
     </div>
   );
 };

@@ -17,117 +17,71 @@ const Accueil = () => {
   }
 
   return (
-    <div>
+    <div className='imageAccueil'>
 
-      <div id="accueil" >
 
-        <div className='background-image'>
-          <div className='navbar_accueil'>
-            <NavBar />
+      <div id="accueil">        
+
+        <div className='navbar_accueil'>
+          <NavBar />
+        </div>
+
+        <div className='infos'>
+          <div className='conteneurInfos'>
+            <div className='NomPrenom'>
+              <h1>Manon Avaullée</h1>
+              <h2>Développeuse informatique</h2>
+              <h3>Epitech Bordeaux - 4ème année cursus MSC</h3>
+            </div>
+
+            <div className='NomPrenom'>
+             
+              <h3>Votre prochaine alternante/stagiaire alternée</h3>
+              <h4>2 jours d'école / 3 jours d'entreprise</h4>
+            </div>
+
+            <div className='container_button_infos2'>
+              <a href="/CV_Manon_AVAULLEE.pdf" download="CV_Manon_Avaullée.pdf">
+                <ButtonCustom label="CV" onClick={btnCvClick} styleType='banniere' />
+              </a>
+
+                <ButtonCustom label="LinkedIn" styleType="lien_adresse" lien_adresse={"https://www.linkedin.com/in/manon-avaull%C3%A9e-5335a7228/"} />
+            </div>
           </div>
-          <div className='centreur dessend'>
-            <div className='info_gauche'>
-
-            </div>
-            <div className='info_milieu'>
-              <div className='photo_profil'></div>
-            </div>
-            <div className='info_droite'>
-          
-
-            </div>
-
-          </div>
-        </div>  
-        
-        
-        <div className='container_infos_profil'>
-
-          <div className='centreur'>
-            
-            <div className='info_gauche child1 dessend_mobile'>
-
-              <div className='colle_a_droite'>
-                <p className='texteGras'>Manon Avaullée</p><br/>
-                <p className='texteGras'>Architecte logiciel et application web</p><br/>
-                <p className=''>Epitech Bordeaux - 4ème année cursus MSC</p><br/>
-
-                <div className='container_button_infos'>
-                  <a href="/CV_Manon_AVAULLEE.pdf" download="CV_Manon_Avaullée.pdf">
-                    <ButtonCustom label="CV" onClick={btnCvClick} styleType='banniere' />
-                  </a>
-                  
-            <ButtonCustom label="LinkedIn" styleType="lien_adresse" lien_adresse={"https://www.linkedin.com/in/manon-avaull%C3%A9e-5335a7228/"} />
-          
-                </div>
-              </div>
-              
-            </div>
-
-            <div className='info_milieu child2'>
-            </div>
-
-            <div className='info_droite child3'>
-                <p className='texteGras'>Recherche d'alternance : Novembre 2024</p>
-                <p className='texteRapproche'>3 jours entreprise - 2 jours d'école</p>
-                <p><span className='texteGras'>Mail</span> : manon.avaullee@epitech.eu</p>
-                <p className='texteRapproche'><span className='texteGras'>Tél</span> :  06 09 18 29 89</p>
-            </div>  
-          </div>
-        </div>   
+        </div>          
       </div>
 
       <div id="bio" className='block_bio'>
-        <h2 className='texte_centre'>A propos</h2>
+        <h2 className='texte_centre'></h2>
 
         <div className='div_centre_exterieur'>
 
           <div className='div_centre_interieur'>
-            <p className=''>
-              
-            Suite à un BTS SIO SLAM et une première année dans le cursus MSC d'Epitech Bordeaux, 
-            j'ai pu acquérir une expérience dans les langages et frameworks de développement web 
-            (HTML/CSS/JS, ReactJS/TS, NodeJs, React Native, Symfony, PHP, Tailwind), 
-            la création et la consommation d'API, la conception et la gestion de 
-            bases de données relationnelles et non relationnelles (SQL et MongoDB), 
-            ainsi que dans les langages de programmation orientée objet (Java, C# et C++).
-
-            <br/>
-            <br/>
-
-            Vous trouverez dans ce portfolio quelques réalisations, projets scolaires ou personnels, en cours ou finalisés.
+            <p>              
+              Suite à un BTS SIO SLAM et une première année dans le cursus MSC d'Epitech Bordeaux, 
+              j'ai pu acquérir une expérience dans les langages et frameworks de développement web 
+              (HTML/CSS/JS, ReactJS/TS, NodeJs, React Native, Symfony, PHP, Tailwind), 
+              la création et la consommation d'API, la conception et la gestion de 
+              bases de données relationnelles et non relationnelles (SQL et MongoDB), 
+              ainsi que dans les langages de programmation orientée objet (Java, C# et C++).
+              <br/>
+              <br/>
+              Vous trouverez dans ce portfolio quelques réalisations, projets scolaires ou personnels, en cours ou finalisés.
             </p>
-
-          </div>
-         
-        </div>
-
-        <h2 className='texte_centre'>Soft skills</h2>
-        <div className='div_centre_exterieur'>
-          <div className='div_centre_interieur'> 
-
-            <div className='div_bas'>
-
-            <DivCustom label={"Curiosité"} styleType={"divSoftSkills"}/>
-              <DivCustom label={"Autonomie"} styleType={"divSoftSkills"}/>
-              <DivCustom label={"Esprit d'équipe"} styleType={"divSoftSkills"}/>
-
-            </div>
-          </div>
-         
-        </div>
-       
+          </div>         
+        </div>      
       </div>
+      
+      <div className='aligneProjets'>
       <div id="projets" className='block_projets'>
+
         <h2>Mes projets</h2>
 
         <div className='grid'>
           <h3>Développement informatique</h3>
-         
-          <div className='div_centre_exterieur'>
 
             <div className='div_centre_interieur_projet'>
-              <div class="flex-container">
+              <div class="flexContainer">
               
               <CardCustom  
                   Title="GeoGuezzer" 
@@ -159,7 +113,7 @@ const Accueil = () => {
 
               </div>
             </div>
-          </div>
+         
         </div>
 
         <div className='grid'>
@@ -168,7 +122,7 @@ const Accueil = () => {
           <div className='div_centre_exterieur'>
 
             <div className='div_centre_interieur_projet'>
-              <div class="flex-container">
+              <div class="flexContainer">
               
               <CardCustom  
                   Title="De l'essence à la saveur" 
@@ -190,23 +144,17 @@ const Accueil = () => {
                   tagList={['Blender']}
                   descriptionCourte="Modélisation d'assets 3D pour le jeu vidéo"
                   route ="9"/>
-
-              
-
               </div>
             </div>
           </div>
         </div>
-        
       </div>
+
+       
       <div id="competences" className='block_competences'>
-      <h2>Mes Compétences</h2>
-
-      <div className='grid'>         
-          <div className='div_centre_exterieur'>
-            <div className='div_centre_interieur_projet'>
-              <div class="flex-container_competence">
-
+        <h2>Mes Compétences</h2>
+           
+              <div class="container_competence32">
 
                 <div className='div1_competence'> 
                   <div className='div_haut_competence'>
@@ -234,11 +182,7 @@ const Accueil = () => {
                     <DivCustom label={"C#"} styleType={"competences"} urlImage={"c.png"} titreAlt={"c#"}/>
 
                     </div>
-
-                    
                   </div>
-                  
-
                 </div>
 
                 <div className='div2_competence'> 
@@ -249,37 +193,18 @@ const Accueil = () => {
                   <div className='div_bas_competence'>
                     <div className='div_gauche_competence competence_gauche'>
                       <DivCustom label={"Figma"} styleType={"competences"} urlImage={"figma.png"} titreAlt={"Figma"}/>
-                      <DivCustom label={"Ilustrator"} styleType={"competences"} urlImage={"illustrator.png"} titreAlt={"Illustrator"}/>
-                      
-                     
+                      <DivCustom label={"Ilustrator"} styleType={"competences"} urlImage={"illustrator.png"} titreAlt={"Illustrator"}/>                     
                     </div>
 
-                    <div className='div_droite_competence competence_droite'>                     
-                      
+                    <div className='div_droite_competence competence_droite'>
                       <DivCustom label={"Blender"} styleType={"competences"} urlImage={"blender.png"} titreAlt={"Blender"}/>
                       <DivCustom label={"Photoshop"} styleType={"competences"} urlImage={"photoshop.png"} titreAlt={"Photoshop"}/>
-
-                    </div>
-
-                    
+                    </div>                    
                   </div>
-                  
-
-                </div>
-                              
+                </div>      
               </div>
-            </div>
-          </div>
-
-        </div>
-
-
-
       </div>
-
-      <div className='footer'>
-        <p></p>
-      </div>
+    </div>
     </div>
   );
 };

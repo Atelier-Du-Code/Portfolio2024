@@ -2,11 +2,11 @@
     background-color: var(--button_color);
     border: none;
     border-radius: var(--border_radius_button);
-    box-shadow: 5px 5px 5px var(--shadow_color_button);
+    box-shadow: 3px 3px 3px var(--shadow_color_button);
     transition: background-color 0.3s ease-in-out;    
     cursor: pointer;
 
-    color: var(--font_color);    
+    color: var( --font_color_foncee);    
     font-family: var(--font);  
     font-size: var(--font_size_button);
 

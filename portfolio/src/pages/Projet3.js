@@ -22,16 +22,18 @@ const Projet3 = () => {
   return (
 
     <div className='page_container'>
-       <div className='background_image'>
+      <div className='imageBackgroundContainer'>
+
+     
+      
           <div className='navbar_accueil'>
             <NavBar />
           </div>
-        </div>
-
-        <div className='div_bande_banniere'>
+       
+       <div className='containerTitreDescription'>
+       <div className='div_bande_banniere'>
           <div className='div_bande_banniere_texte'>
             <h2>CarePlant</h2>
-            <p>Réseau social dédié à l'échange de savoirs et de photos sur les plantes d'intérieur.</p>
               <div className='div_organise_tags'>            
                 <div className='div_tags'>
                 <DivCustom label={"#Work in progress"} styleType={"tag_blanc"}/> 
@@ -46,11 +48,13 @@ const Projet3 = () => {
             </div>
           </div>            
         </div>
-
+        
         <div className='div_description'>
-            <h4>Description</h4>
+           
             <p>CarePlant est une plateforme sociale dédiée aux passionnés de plantes d'intérieur. Elle permet aux utilisateurs de partager leurs connaissances, leurs astuces et des photos de leurs plantes préférées.</p>
         </div>
+       </div>
+        <div className='backgroundTechProjet'>
 
         <div className='div_tech_orga'>        
           <div className='div_tech'>
@@ -75,16 +79,18 @@ const Projet3 = () => {
         <div className='conteneur_demo_btn_fonctionnalites'>
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_demo'>
-              <h4>Quelques visuels</h4>
+              <h4>Quelques visuels de la maquette Figma</h4>
               <Slider images={images}></Slider>            
-            </div>
+            
 
             <div className='div_buttonCustom'>
               <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/CarePlant"} />
             </div>
+            </div>
           </div>
         </div>
 
+        <div className='containerFonctionnaliteSprints'>
         <div className='conteneur_demo_btn_fonctionnalites'>
           <div className='div_demo_btn_fonctionnalites'>
             <div className='div_fonctionnalites'>
@@ -117,7 +123,12 @@ const Projet3 = () => {
             </div>           
           </div>        
         </div>
-        <Footer></Footer>
+        </div>
+       
+
+        </div>
+        </div>
+       
     </div>
   );
 };

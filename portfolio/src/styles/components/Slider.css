@@ -90,7 +90,7 @@
   height: 12px;
   width: 12px;
   margin: 0 4px;
-  background-color: #bbb;
+  background-color: var(--surface_color_peche_shadow);
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;

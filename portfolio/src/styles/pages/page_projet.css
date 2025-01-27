@@ -4,24 +4,46 @@
    
 }
 
-.background_image {
 
-    background-image: url('../../images/background.png');
-  
 
-    background-size: cover; 
-    background-repeat: no-repeat; 
+.imageBackgroundContainer {
+    width: 100%;
+    height: auto;
+    background-image: 
+      linear-gradient(to bottom, #5b4a72, #cfb78a); 
   
-    width: 100%; 
-    height: 300px;
-}
+    background-size: 100% 300%;
+    background-position: 50% 0%;
+    animation: gradientShift 8s ease infinite;
+   
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  
+    color: var(--font_color_clair);
+    margin-bottom: -80px;
+   
+  
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%; 
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+
 
 .div_bande_banniere {
-    background-color: var(--surface_color_peche);
+    background-color: rgba(0, 0, 0, 0);
     height: auto;
    
     margin-bottom: 20px;
-    margin-top: -25px;
+    margin-top: 30px;
     padding-bottom: 20px;
 
     display: flex;
@@ -89,29 +111,63 @@
     background-color: rgba(255, 38, 0, 0);  
 }
 
+.containerTitreDescription {
+    background-color: rgba(0, 255, 255, 0);
+    padding-top: 20px;
+}
+
+
+.backgroundTechProjet {
+    background-color: #f1e2c6af;
+
+    margin-top: 60px;
+
+    padding-top: 15px;
+    padding-bottom: 30px;
+    
+  
+}
+
+.backgroundTechProjet p {
+    color:var(--font_color_foncee);
+}
+
 .div_tech_orga {
     background-color: rgba(139, 68, 20, 0);
+    height: 150px;
+  
     display: flex;
-    justify-content: center;    
-    gap: 10px;
-    margin-top: 3vh;   
-    height: 165px;
-    overflow: auto;
+    justify-content: flex-start;    
+    gap: 10px;   
+
+    margin-top: 60px; 
     padding: 0px 18vw;
 
 }
 
 .div_tech {
-    background-color: var(--surface_color_peche);
+   
+    background-color: var(--surface_claire);  
     border-radius: 20px;
+    border-radius: 10px;
+
     flex: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    margin-top: 0vh;
+}
+
+.div_tech h4{
+    background-color: rgba(0, 255, 255, 0);
+    font-weight: 500;
+    font-size: medium;
+    padding-bottom: 5px;
    
- 
+    
 }
 
 
@@ -120,7 +176,7 @@
 
 
 .range_tech {
-    background-color: #e7b5b500;
+    background-color: #ce4c4c00;
     display: flex;
     justify-content: center;
     gap: 1vw;
@@ -147,37 +203,56 @@
 
 
 .conteneur_demo_btn_fonctionnalites {
-    background-color: rgba(220, 20, 60, 0);
+    background-color: rgba(220, 20, 60,0);
     display: flex;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 0vh;
     min-width: 85vw;  
 
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 
 }
 
 .div_demo_btn_fonctionnalites {
-    background-color: var(--surface_color_peche);
-    width: 47vw;
+    background-color: rgb(88, 212, 30,0);
+    width: 48vw;
   
     height: auto;
     border-radius: 20px;
-    padding: 15px 20px;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
     
 
 }
 
 .div_demo {
-    background-color:rgb(192, 144, 238, 0);
+    background-color: var(--surface_claire);
     margin-top: 10px;
+    width:60vw;
     height: auto;
-    padding: 0px 30px;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
+.div_demo h4 {
+     font-weight: 500;
+    font-size: medium;
+    padding-bottom: 5px;
+}
+
 .demo {
-    background-color: rgb(137, 43, 226, 0);
+    background-color: rgb(9, 245, 28);
     width: auto;
     height: auto;
 }
@@ -207,11 +282,17 @@
    
 }
 
+.div_fonctionnalites h4{
+    font-weight: 500;
+    font-size: medium;
+    text-align: center;
+}
+
 
 .fonctionalites {
-    background-color:#fefcfb;
-    width: 55vw;
-    border-radius: 20px;
+    background-color: var(--surface_claire);
+    width: 57vw;
+    border-radius: 10px;
     padding: 20px 20px;
     
 }
@@ -237,13 +318,17 @@
     padding: 28px 25px;
   }
 
+
+
+  /*---Les media -----------------------------------------*/
+
 @media (min-width: 1070px) {
 
     .div_tech_orga {
         padding: 0px 19vw;
     }
     .div_demo_btn_fonctionnalites {
-        background-color: var(--surface_color_peche);
+        background-color: rgba(0, 0, 0, 0);
         width: 57vw;
         min-width: 610px;
     }
@@ -260,9 +345,18 @@
 
 @media (max-width: 1070px) and (min-width: 700px) {
     .div_demo_btn_fonctionnalites {
-        background-color: var(--surface_color_peche);
-        width: 86vw;
-        min-width: 585px;        
+        background-color: var(--surface_claire);
+        width: 87vw;
+        min-width: 585px;     
+        margin-top: 10px;   
+        border-radius: 10px;
+        padding-top: 0px;
+    }
+
+    .div_demo {
+        background-color: var(--surface_claire);
+        min-width: 104%;
+        margin-top: 0px;
     }
 
     .div_tech_orga {
@@ -274,13 +368,28 @@
     .div_tech h4 {
         background-color: rgba(66, 189, 70, 0);
         margin: 20px 12px;
-
-
     }
 
-   
-}
 
+
+    .div_demo_btn_fonctionnalites {
+        background-color:rgba(165, 42, 42, 0) ;
+    }
+
+    .div_fonctionnalites {
+        background-color: rgba(127, 255, 212, 0);
+        min-width: 103%;
+        padding-top: 0px;
+      
+    }
+
+    .fonctionalites {
+        background-color: var(--surface_claire);
+        min-width: 97%;
+        margin-top: 0px;
+    }
+
+}
   
 @media (max-width: 700px) {
     
@@ -296,14 +405,97 @@
     .div_tech {
         margin: 0px 0px;
         padding: 0px 20px;
-        background-color: var(--surface_color_peche);
+        background-color: var(--surface_claire);
+       
     }
 
     .div_demo_btn_fonctionnalites {
-        width: 80vw;
-        margin: 0px 20px;
-        background-color: var(--surface_color_peche);
+        width: 81vw;
+        margin: 10px 20px;
+        background-color:rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        padding-top: 0px;
+
     }
+
+    .div_demo {
+        width:108%;
+        margin-top: 0px;
+
+     
+    }
+
+    .div_demo h4  {
+       
+        background-color: rgba(0, 255, 255, 0);
+    }
+    
+    .div_demo_btn_fonctionnalites {
+        background-color:rgba(165, 42, 42, 0) ;
+    }
+
+
+    
+    .div_fonctionnalites {
+        background-color: rgba(127, 255, 212, 0);
+        min-width: 104%;     
+        padding-top: 0px; 
+    }
+
+    .fonctionalites {
+        background-color: var(--surface_claire);
+        min-width: 97%;
+        margin-top: 0px;
+
+    }
+
+
+    
+    
+}
+
+@media (max-width: 542px) and (min-width: 320px) {
+
+    .conteneur_demo_btn_fonctionnalites {
+        background-color: rgba(210, 105, 30,0);
+        padding:0px
+    }
+    .div_demo_btn_fonctionnalites {
+        background-color: var(--surface_claire);
+        min-width: 80%;
+    
+    }
+
+
+    .div_demo {
+        background-color: rgba(0, 0, 255, 0);
+        min-width:111%;
+        margin-top: 0px;
+
+    }
+
+    .div_demo h4  {
+       
+        background-color: rgb(255, 230, 0, 0);
+        text-align: center;
+    }
+
+    .div_fonctionnalites {
+        background-color: rgba(127, 255, 212,0);
+      
+    }
+
+    .containerFonctionnaliteSprints{
+        background-color: rgba(137, 43, 226, 0);
+    }
+
+    .containerFonctionnaliteSprints .div_demo_btn_fonctionnalites{
+        background-color: rgba(255, 127, 80, 0);
+
+    }
+
+   
+
 }
 
 @media (max-width: 320px) {
@@ -316,15 +508,31 @@
 
     .div_tags {
         background-color: rgba(210, 105, 30, 0);
-        width: 41vw;  
-                                           
+        width: 41vw;                                             
         
         display: flex;
         justify-content: center;
         gap: 0.8vh;
         flex-wrap: wrap;
-        
     }
+
+    .div_demo_btn_fonctionnalites {
+        background-color: black;
+        min-width: 76%;
+    }
+
+    .div_demo {
+        background-color: var(--surface_claire);
+        min-width: 120%;
+      
+    }
+
+    .div_demo h4  {
+        text-align: center;
+        background-color: rgb(157, 255, 111);
+    }
+
+    
 
 
     

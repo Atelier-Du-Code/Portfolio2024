@@ -6,7 +6,6 @@ const DivImage = ({ Title, urlImage, titreAlt}) => {
   return (
     
     <div className='divImage'>
-
         <img className='image_div' src={urlImage} alt={titreAlt} />
         <p>{Title}</p>
     </div>

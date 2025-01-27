@@ -8,7 +8,6 @@ const ButtonCustom = ({ label, route, styleType, disabled = false, lien_page, li
   const btnClickProjet = () => {
     console.log("Clic pour changer de page");
 
-    // Définir l'URL en fonction de la route
     let targetRoute = '/';
     switch (route) {
       case '1':
@@ -42,12 +41,8 @@ const ButtonCustom = ({ label, route, styleType, disabled = false, lien_page, li
         break;
     }
 
-    // Si le styleType est différent de lien_page et lien_adresse, ouvrir dans un nouvel onglet
-    if (styleType !== 'lien_page' && styleType !== 'lien_adresse') {
-      window.open(targetRoute, '_blank'); // Ouvre dans un nouvel onglet
-    } else {
-      navigate(targetRoute); // Navigation classique dans le même onglet
-    }
+    navigate(targetRoute);
+
   };
 
   const btnClickLien_page = () => {

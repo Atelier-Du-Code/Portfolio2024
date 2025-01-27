@@ -21,12 +21,10 @@ const Slider = ({ images }) => {
       <div className="slider-wrapper">
         <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="slider-image" />
 
-        {/* Boutons de navigation */}
         <button onClick={prevSlide} className="slider-button slider-button-prev">‹</button>
         <button onClick={nextSlide} className="slider-button slider-button-next">›</button>
       </div>
 
-      {/* Indicateurs */}
       <div className="slider-indicators">
         {images.map((_, index) => (
           <span

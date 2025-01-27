@@ -1,13 +1,16 @@
 .centre_texte {
     text-align: center;
     margin: 20px 0px;
+    font-weight: 500;
+    font-size: medium;
 }
 
 .card {
-  background-color: var(--color1);
+  background-color: var(--color_card);
   padding: 10px;
   border-radius: 10px;
   width: 300px;
+  color:var(--font_color_foncee);
   
   height: 385px;
   

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/DivCustom.css'; // Fichier CSS pour le style du bouton
+import '../styles/components/DivCustom.css';
 
 const DivCustom = ({ label, styleType, urlImage, titreAlt}) => {
   return (     

@@ -15,11 +15,13 @@ const Projet1 = () => {
 
 
     <div className='page_container'>
-       <div className='background_image'>
+      <div className='imageBackgroundContainer'>
+       
+     
           <div className='navbar_accueil'>
             <NavBar />
           </div>
-        </div>
+      
 
         <div className='div_bande_banniere'>
           <div className='div_bande_banniere_texte'>
@@ -35,7 +37,11 @@ const Projet1 = () => {
                 </div>
             </div>
           </div>            
-        </div>
+       
+
+      </div>
+      </div>
+      
 
        
 

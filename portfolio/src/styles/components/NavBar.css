@@ -1,7 +1,6 @@
-/* Styles pour la navbar */
 .navbar {
- /* background-color: blueviolet;*/
-  background: var(--background-gradient);
+ 
+  background-color: rgba(127, 255, 212,0);
   
   display: flex;
   justify-content: center;
@@ -11,11 +10,11 @@
 
   width: 90vw;
   height: 45px;
-  box-shadow: 5px 5px 5px var(--surface_color_peche_shadow);
-  padding: 8px;
+  border-bottom: 1px solid #A89F91;
+  padding: 30px;
  
   margin-top: 20px;
-  border-radius: 30px;
+  border-radius: var(--font_color_clair);
 
 }
 
@@ -24,6 +23,7 @@
  
   background-color: rgba(165, 42, 42, 0);
   padding: 0px 10px;
+  font-family: var(--font);
  
   opacity: 1;
   transition: opacity 0.9s ease-in, transform 0.9s ease-in;
@@ -65,10 +65,11 @@
 .linkContainer_link p a {
   text-decoration: none;
   color: var(--font_color);
+  padding: 5px;
 }
 
 .linkContainer_link p:hover {
-  background-color: var(--hover_color);  
+  background-color: var(--hover_color_navbar_clair);  
 }
 
 /* CV */
@@ -79,13 +80,16 @@
   justify-content: left;
   align-items: baseline;  
   padding-top: 10px;
+
+  
 }
 
 
 .linkContainer_btn button {
-  color: var(--font_color);
+  color: var(--font_color_foncee);
   font-family: var(--font);  
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 14px;
   background-color: var(--button_color);
   border: none;
   border-radius: 30px;
@@ -249,48 +253,6 @@
 
 }
 
-/*
-
-@media (max-width: 900px) {
-  .mobile-only {
-    opacity: 0;   
-    pointer-events: none;
-  }
-
-  .estCache {
-    display: none;
-  }
-
- .linkContainer_link {
-  margin-left: 0vw;
-  
- }
-
- .parentContainer_link_btn {
-  padding-right: 0vw;
-  max-width: 0%;
-  gap:10vw;
- }
-
- .linkContainer_btn {
-  margin-right: 0vw;
- }
-
-}
-
-@media (min-width: 725px) {
-  .navbar {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-*/
-
-
-
-
-
-
 /* Liste des projets */
 .dropdown {
   position: relative;
@@ -309,16 +271,15 @@
 }
 
 /* Animation de la liste déroulante */
-/* Styles pour masquer le contenu par défaut */
 .dropdown {
-  position: relative; /* Assure que .dropdownContent est positionné par rapport au bouton */
+  position: relative; 
 }
 
 .dropdownContent {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: var(--color1);
+  background-color: var(--surface_color_peche);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px var(--surface_color_peche_shadow);
   z-index: 1;
@@ -326,6 +287,8 @@
   transition: opacity 0.3s ease, transform 0.3s ease; 
   transform: translateY(-10px); 
   pointer-events: none;
+
+
 }
 
 /* Affiche le menu lorsqu'on survole le bouton ou le contenu */
@@ -339,12 +302,13 @@
 .dropdownContent p {
   padding: 12px 16px;
   margin: 0;
-  background-color: var(--color1);
+  background-color:var(--surface_color_peche);
   transition: background-color 0.2s ease;
+  color:var(--font_color_foncee);
 }
 
 .dropdownContent p:hover {
-  background-color: var(--hover_color);
+  background-color: var(--hover_color_navbar_foncee);
 }
 
 .dropdownContent p a {
