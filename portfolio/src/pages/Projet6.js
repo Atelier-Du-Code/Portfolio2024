@@ -4,7 +4,6 @@ import '../styles/pages/page_projet.css';
 import NavBar from '../components/NavBar.js';
 import DivCustom from '../components/DivCustom.js';
 import ButtonCustom from '../components/ButtonCustom.js';
-import Footer from '../components/Footer.js';
 import Slider from '../components/Slider.js';
 
 const Projet6 = () => {
