@@ -252,7 +252,7 @@
 }
 
 .demo {
-    background-color: rgb(9, 245, 28);
+    background-color: rgb(9, 245, 28, 0);
     width: auto;
     height: auto;
 }
