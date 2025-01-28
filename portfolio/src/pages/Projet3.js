@@ -84,6 +84,7 @@ const Projet3 = () => {
 
             <div className='div_buttonCustom'>
               <ButtonCustom label="GitHub" styleType="lien_adresse" lien_adresse={"https://github.com/Atelier-Du-Code/CarePlant"} />
+              <ButtonCustom label="Site en ligne" styleType="lien_adresse" lien_adresse={"https://careplantfront.portefolio.avaulleemanonportefolio.fr/"} />
             </div>
             </div>
           </div>
